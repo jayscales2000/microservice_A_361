@@ -1,0 +1,86 @@
+@SAMPLE_1__id_str = 682c63ea707528748629efb6
+@SAMPLE_2__id_str = 682c63ea707528748629efc8
+@SAMPLE_3__id_str = 682c63ea707528748629efe6
+
+### Request 1
+# {
+#   "_id": {
+#     "$oid": "682c63ea707528748629efb6"
+#   },
+#   "gender": "male",
+#   "age": {
+#     "$numberInt": "42"
+#   },
+#   "location": "dc",
+#   "education": "high school",
+#   "smoking": "none",
+#   "drinking": "none",
+#   "sexual_orientation": "bisexual",
+#   "political_views": "moderate",
+#   "__v": {
+#     "$numberInt": "0"
+#   }
+# }
+POST http://localhost:3000/automatching_microservice HTTP/1.1
+content-type: application/json
+
+{
+    "_id_str": "{{SAMPLE_1__id_str}}", 
+    "max_matches_number": 10
+}
+
+### Request 2
+# {
+#   "_id": {
+#     "$oid": "682c63ea707528748629efc8"
+#   },
+#   "gender": "female",
+#   "age": {
+#     "$numberInt": "35"
+#   },
+#   "location": "sea",
+#   "education": "high school",
+#   "smoking": "moderate",
+#   "drinking": "low",
+#   "sexual_orientation": "straight",
+#   "political_views": "moderate",
+#   "__v": {
+#     "$numberInt": "0"
+#   }
+# }
+POST http://localhost:3000/automatching_microservice HTTP/1.1
+content-type: application/json
+
+{
+    "_id_str": "{{SAMPLE_2__id_str}}", 
+    "max_matches_number": 12
+}
+
+
+### Request 3
+# {
+#   "_id": {
+#     "$oid": "682c63ea707528748629efe6"
+#   },
+#   "gender": "male",
+#   "age": {
+#     "$numberInt": "63"
+#   },
+#   "location": "dc",
+#   "education": "masters",
+#   "smoking": "none",
+#   "drinking": "none",
+#   "sexual_orientation": "bisexual",
+#   "political_views": "moderate",
+#   "__v": {
+#     "$numberInt": "0"
+#   }
+# }
+POST http://localhost:3000/automatching_microservice HTTP/1.1
+content-type: application/json
+
+{
+    "_id_str": "{{SAMPLE_3__id_str}}", 
+    "max_matches_number": 15
+}
+

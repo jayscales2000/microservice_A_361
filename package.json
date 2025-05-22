@@ -1,0 +1,26 @@
+{
+    "name": "automatching_microservice",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "automatching_microservice.mjs",
+    "scripts": {
+        "test": "jest",
+        "start": "nodemon automatching_microservice.mjs"
+    },
+    "author": "",
+    "license": "GPLv3",
+    "dependencies": {
+        "axios": "latest",
+        "dotenv": "latest",
+        "express": "latest",
+        "express-async-handler": "latest",
+        "jest": "latest",
+        "mongoose": "latest",
+        "nodemon": "latest"
+    },
+    "devDependencies": {
+        "jest": "latest",
+        "nodemon": "latest"
+    }
+}
